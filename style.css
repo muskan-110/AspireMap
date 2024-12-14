@@ -162,7 +162,7 @@ ul li a:hover {
 .btnn {
     width: 240px;
     height: 40px;
-    background: #f18a1cd2;
+    background: #f58207d2;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -173,8 +173,8 @@ ul li a:hover {
 }
 
 .btnn:hover {
-    background: #fff;
-    color: #f18a1cd2;
+    background: orange;
+    color: black;
 }
 
 .btnn a {
@@ -193,7 +193,7 @@ ul li a:hover {
 .form .link a {
     text-decoration: none;
     color: #f18a1cd2;
-}
+    
 
 .liw {
     padding-top: 15px;

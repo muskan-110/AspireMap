@@ -2,79 +2,94 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    font-size: x-large;
-    background: #f18a1cd2;
+    background: url('https://media.istockphoto.com/id/1387073187/vector/orange-vector-cover-wallpaper.jpg?s=612x612&w=0&k=20&c=c-mVdVrioq3C4kcLxk4Y-bltcCUv3z0l5SzaaerfC-A=') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Adjust text color for better readability */
 }
 
-.vh-100 {
-    height: 100vh;
-}
-
-.card {
+.form-container {
     display: flex;
-    height: 100%;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card .image-section {
-    width: 40%;
-    background-color: #f5f5f5;
-}
-
-.card .image-section img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.card .form-section {
-    width: 60%;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centers content vertically and horizontally */
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
-.form-outline {
-    margin-bottom: 1.5rem;
-    width: 100%; /* Ensure the input fields occupy full width of their container */
+.form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(46, 28, 1);
+    text-align: center;
+    width: 300px;
 }
 
-.btn {
-    background-color: #333;
-    color: white;
-    padding: 0.8rem 1.5rem;
+.form h2 {
+    color: #141313;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #454343;
+    font-family: Arial;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnn {
+    width: 100px; /* Shorten the button */
+    height: 40px;
+    background: #f18a1cd2;
     border: none;
+    margin-top: 0; /* Remove extra margin */
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%; /* Make the button stretch across the full form section */
+    color: #fff;
+    text-align: center;
+    line-height: 40px; /* Center the text vertically */
+    transition: 0.4s ease;
 }
 
-.btn:hover {
-    background-color: #555;
-}
-
-a {
-    text-decoration: none;
-    color: #393f81;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #1a3f81;
-}
-
-.pt-1 {
-    padding-top: 1rem;
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem; /* Adds space below the login button */
+.btnn:hover {
+    background: orange;
+    color: black;
 }
 
 .forgot-password {
-    margin-top: 1rem; /* Adds space between the login button and the 'forgot password' link */
+    color: #393f81;
+    text-decoration: none;
+}
+
+ul.centered-bullets {
+    list-style-type: disc; /* Show bullets */
+    text-align: center; /* Center the list */
+    padding: 0;
+}
+
+ul.centered-bullets li {
+    margin: 10px 0;
+}
+
+ul.centered-bullets li a {
+    color: #393f81;
+    text-decoration: none;
+}
+
+
 }
