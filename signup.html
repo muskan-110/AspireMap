@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp - AspireMap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css1/style.css') }}">
+</head>
+<body>
+
+    <style> 
+        body { 
+            background: url('https://img.freepik.com/premium-photo/brown-paper_421632-26841.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+        }
+    </style>
+
+    <div class="form-container">
+        <div class="form">
+            <h2>Signup</h2>
+            
+            <!-- Form for sign up -->
+            <form method="POST" action="{{ url_for('signup') }}">
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <button type="submit" class="btnn">Signup</button>
+            </form>
+
+            <!-- Link to login page if needed -->
+            <p class="link">Already have an account?<br>
+            <a href="#">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
