@@ -131,6 +131,7 @@ ul li a:hover {
 }
 
 .form {
+    background: rgba(255, 255, 255, 0.9);
     padding: 50px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgb(46, 28, 1);
