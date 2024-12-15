@@ -3,11 +3,12 @@
 <head>
     <title>AspireMap</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='css1/style.css')}}">
+
 </head>
 <body>
-
     <div class="main">
         <div class="navbar">
+            
             <div class="icon">
                 <h2 class="logo">AspireMap</h2>
             </div>
@@ -15,30 +16,83 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+
                     <li><a href="#">SERVICE</a></li>
                     <li><a href="#">FAQ'S</a></li>
                     <li><a href="#">CONTACT</a></li>
+                    <div class="new">
+                        <li>
+                            <button class="login">
+                                <a href="{{ url_for('login') }}">LOGIN</a>
+                            </button>
+                        </li>
+                    </div>
                 </ul>
             </div>
-
+            
            <!--- <div class="search">
                 <input class="srch" type="search" name="" placeholder="Type To text">
                 <a href="#"> <button class="btn">Search</button></a>
             </div> -->
-
         </div> 
-        <div class="content">
+         <div class="content">
             <h1>DISCOVER <br><span>PLAN</span> <br>EXPLORE</h1>
-            <p class="par">AspireMap helps you design your career roadmap with personalized plans, expert insights, and a supportive community. Chart your professional journey and reach your goals with AspireMap.</p>
-<br>
-         <button class="cn"><a href="signup.html">LOGIN</a></button>
-        
-               
+            <p class="par">Your personalized guide to career success.</p>
+           <br>
+           <div class="ding">
+            <button class="GetS">
+                <a href="{{ url_for('student_form') }}">Get Started</a>
+            </button>
         </div>
+         </div>
     </div>
 </div>
 </div>
+<!-- About Feature Section -->
+<section class="features" id="features">
+    <div class="features-container">
+        <h2>Our Features</h2>
+        <div class="feature-item">
+            <ion-icon name="compass"></ion-icon>
+            <h3>Personalized Roadmaps</h3>
+            <p>Get customized career paths tailored to your goals.</p>
+        </div>
+        <div class="feature-item">
+            <ion-icon name="briefcase"></ion-icon>
+            <h3>Expert Advice</h3>
+            <p>Receive guidance from industry professionals.</p>
+        </div>
+        <div class="feature-item">
+            <ion-icon name="analytics"></ion-icon>
+            <h3>Insightful Resources</h3>
+            <p>Access a wealth of information to help you succeed.</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <h2 class="logo">AspireMap</h2>
+        <p>Empowering individuals with customized career roadmaps and insights.</p>
+        <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        </div>
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    </div>
+    <p>&copy; 2024 AspireMap. All rights reserved.</p>
+</footer>
+
 <script src="script.js"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>

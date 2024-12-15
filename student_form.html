@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css1/form.css') }}">
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="logo">Get a Personalized Roadmap</h2>
+            <h4>Provide the details – we’ll handle the direction.</h4>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <div class="form">
+            <h2>Fill in your details</h2>
+
+            <form method="POST" action="{{ url_for('student_form') }}">
+                <!-- Name Field -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- Class Field -->
+                <label for="class">Class</label>
+                <input type="text" id="class" name="class" placeholder="Enter your class" required>
+
+                <!-- Stream Section with subheadings for checkboxes -->
+            
+                <!-- Stream Section with checkboxes -->
+<div class="stream-section">
+    <h4>Choose your Stream</h4>
+    <div class="checkbox-group">
+        <label for="science">
+            <input type="checkbox" id="science" name="stream" value="Science">
+            Science
+        </label>
+        <label for="commerce">
+            <input type="checkbox" id="commerce" name="stream" value="Commerce">
+            Commerce
+        </label>
+        <label for="arts">
+            <input type="checkbox" id="arts" name="stream" value="Arts">
+            Arts
+        </label>
+    </div>
+</div>
+
+<!-- Subjects Section with checkboxes -->
+<div class="subjects-section">
+    <h4>Choose your Subjects</h4>
+    <div class="checkbox-group">
+        <label for="english">
+            <input type="checkbox" id="english" name="subjects" value="English">
+            English
+        </label>
+        <label for="maths">
+            <input type="checkbox" id="maths" name="subjects" value="Maths">
+            Maths
+        </label>
+        <!-- Add more subjects as needed -->
+   
+
+                        <label for="geography">
+                            <input type="checkbox" id="geography" name="subjects" value="Geography">
+                            Geography
+                        </label>
+                        <label for="history">
+                            <input type="checkbox" id="history" name="subjects" value="History">
+                            History
+                        </label>
+                        <label for="physics">
+                            <input type="checkbox" id="physics" name="subjects" value="Physics">
+                            Physics
+                        </label>
+                        <label for="chemistry">
+                            <input type="checkbox" id="chemistry" name="subjects" value="Chemistry">
+                            Chemistry
+                        </label>
+                        <label for="biology">
+                            <input type="checkbox" id="biology" name="subjects" value="Biology">
+                            Biology
+                        </label>
+                        <label for="computer_science">
+                            <input type="checkbox" id="computer_science" name="subjects" value="Computer Science">
+                            Computer Science
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Interests Field -->
+                <label for="interests">Interests</label>
+                <textarea id="interests" name="interests" placeholder="Enter your interests" required></textarea>
+
+                <!-- Skills Field -->
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" placeholder="Enter your skills" required></textarea>
+
+                <button type="submit" class="btnn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

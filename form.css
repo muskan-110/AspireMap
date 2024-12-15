@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600&display=swap');
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Form Styles */
+
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form h2 {
+    margin-bottom: 10px;
+}
+
+/* Stream and Subjects Sections */
+
+.stream-section, .subjects-section {
+    margin-top: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Input Fields */
+
+label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Button Styles */
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    background-color:  #eb890c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+  
+}
+
+.navbar-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.checkbox-group{
+    font-family: Arial, Helvetica, sans-serif;
+}
