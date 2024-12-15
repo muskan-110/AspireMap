@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>AspireMap</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css1/style.css')}}">
+
 </head>
 <body>
     <div class="main">
@@ -15,15 +16,21 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+
                     <li><a href="#">SERVICE</a></li>
                     <li><a href="#">FAQ'S</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <div class="new">
-                    <li><button class="login"><a href="login.html">LOGIN</a></button> </li>
-                </div>
+                        <li>
+                            <button class="login">
+                                <a href="{{ url_for('login') }}">LOGIN</a>
+                            </button>
+                        </li>
+                    </div>
                 </ul>
             </div>
+            
            <!--- <div class="search">
                 <input class="srch" type="search" name="" placeholder="Type To text">
                 <a href="#"> <button class="btn">Search</button></a>
@@ -34,13 +41,15 @@
             <p class="par">Your personalized guide to career success.</p>
            <br>
            <div class="ding">
-          <button class="GetS"><a href="">Get Started</a></button>
+            <button class="GetS">
+                <a href="{{ url_for('student_form') }}">Get Started</a>
+            </button>
         </div>
          </div>
     </div>
 </div>
 </div>
-<!-- Features Section -->
+<!-- About Feature Section -->
 <section class="features" id="features">
     <div class="features-container">
         <h2>Our Features</h2>
@@ -50,19 +59,18 @@
             <p>Get customized career paths tailored to your goals.</p>
         </div>
         <div class="feature-item">
-            <ion-icon name="analytics"></ion-icon>
-            <h3>Skill Gap Analysis</h3>
-            <p>Identify and bridge the gaps in your skills to advance in your career.</p>
+            <ion-icon name="briefcase"></ion-icon>
+            <h3>Expert Advice</h3>
+            <p>Receive guidance from industry professionals.</p>
         </div>
         <div class="feature-item">
-            <ion-icon name="desktop-outline"></ion-icon>
-            <h3>User Friendly Interface</h3>
-            <p>Enjoy an intuitive and easy-to-navigate interface designed for your convenience.</p>
+            <ion-icon name="analytics"></ion-icon>
+            <h3>Insightful Resources</h3>
+            <p>Access a wealth of information to help you succeed.</p>
         </div>
     </div>
 </section>
 
-<!--Footer section-->
 
 <footer class="footer">
     <div class="footer-container">
