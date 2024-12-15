@@ -140,45 +140,6 @@ ul li a:hover {
     transition: 0.3s ease;
 }
 
-/* Features Section */
-.features {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.features-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.features h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.feature-item {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1.5%;
-    text-align: center;
-}
-
-.feature-item ion-icon {
-    font-size: 50px;
-    color: #f18a1cd2;
-    margin-bottom: 20px;
-}
-
-.feature-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    font-size: 16px;
-    color: #666;
-}
 
 /* Form styling */
 .form-container {
@@ -280,6 +241,45 @@ ul li a:hover {
     color: #f18a1cd2;
 }
 
+/* Features Section */
+.features {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.feature-item ion-icon {
+    font-size: 50px;
+    color: #f18a1cd2;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
 
 
 /* Footer Styles */
