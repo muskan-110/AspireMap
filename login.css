@@ -4,9 +4,55 @@ body {
     font-family: Arial, sans-serif;
     background: url('https://media.istockphoto.com/id/1387073187/vector/orange-vector-cover-wallpaper.jpg?s=612x612&w=0&k=20&c=c-mVdVrioq3C4kcLxk4Y-bltcCUv3z0l5SzaaerfC-A=') no-repeat center center fixed;
     background-size: cover;
-    color: white; /* Adjust text color for better readability */
+    color: white; 
 }
-
+/*navbar styling*/
+               .navbar {
+                                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                padding: 10px 20px;
+                                position: fixed;
+                                width: 100%;
+                                top: 0;
+                                left: 0;
+                                z-index: 1000; /* Ensure navbar is above other content */
+                            }
+                            
+                            .navbar-container {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                max-width: 1200px;
+                                margin: 0 auto;
+                            }
+                            
+                            .logo {
+                                color:  #f18a1cd2;
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
+                            
+                            .navbar-menu {
+                                list-style: none;
+                                display: flex;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            .navbar-menu li {
+                                margin-left: 20px;
+                            }
+                            
+                            .navbar-menu li a {
+                                color: #333;
+                                text-decoration: none;
+                                font-size: 16px;
+                                transition: color 0.3s ease;
+                            }
+                            
+                            .navbar-menu li a:hover {
+                                color: #f18a1cd2;
+                            }
+                            /*form styling */                 
 .form-container {
     display: flex;
     justify-content: center;
