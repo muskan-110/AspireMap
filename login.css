@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -29,6 +30,7 @@ body {
                                 color:  #f18a1cd2;
                                 font-size: 24px;
                                 font-weight: bold;
+                                font-family: "Playfair Display", serif;;
                             }
                             
                             .navbar-menu {
@@ -136,4 +138,3 @@ ul.centered-bullets li a {
     color: #393f81;
     text-decoration: none;
 }
-
