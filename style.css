@@ -140,7 +140,35 @@ ul li a:hover {
     transition: 0.3s ease;
 }
 
+/*About page*/
+.about {
+     padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6); 
+     text-align: center; 
+     color: white;
+     position: relative; } 
+     .about-header h1 {
+         font-size: 36px;
+          margin-bottom: 10px;
+         } 
+         
+         .about-header p { 
+            font-size: 18px;
+             margin-bottom: 40px; 
+            } 
+            .about-content { 
+                display: flex; 
+                flex-direction: column;
+                 align-items: center; } 
+                 .about-text { 
+                    max-width: 600px;
+                     margin-left: 20px;
+                      font-size: 16px; 
+                      line-height: 1.6; } 
+                      .about-text p { 
+                        margin-bottom: 20px;}
 
+                        
 /* Form styling */
 .form-container {
     display: flex;
