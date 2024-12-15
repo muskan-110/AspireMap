@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* Reset margin and padding */
 * {
     margin: 0;
@@ -26,7 +29,7 @@
 .logo {
     color: #f18a1cd2;
     font-size: 35px;
-    font-family: Arial;
+    font-family: "Playfair Display", serif;
     padding-left: 20px;
     float: left;
     padding-top: 20px;
@@ -89,7 +92,8 @@ ul li a:hover {
 
 /* Hero section */
 .content {
-    background: url('bg.jpg');
+    background: url('../images/bg.jpg');
+
     background-position: center;
     background-size: cover;
     width: 1200px;
@@ -140,35 +144,46 @@ ul li a:hover {
     transition: 0.3s ease;
 }
 
-/*About page*/
-.about {
-     padding: 60px 20px;
-      background-color: rgba(0, 0, 0, 0.6); 
-     text-align: center; 
-     color: white;
-     position: relative; } 
-     .about-header h1 {
-         font-size: 36px;
-          margin-bottom: 10px;
-         } 
-         
-         .about-header p { 
-            font-size: 18px;
-             margin-bottom: 40px; 
-            } 
-            .about-content { 
-                display: flex; 
-                flex-direction: column;
-                 align-items: center; } 
-                 .about-text { 
-                    max-width: 600px;
-                     margin-left: 20px;
-                      font-size: 16px; 
-                      line-height: 1.6; } 
-                      .about-text p { 
-                        margin-bottom: 20px;}
+/* Features Section */
+.features {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-                        
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.feature-item ion-icon {
+    font-size: 50px;
+    color: #f18a1cd2;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
 /* Form styling */
 .form-container {
     display: flex;
@@ -269,45 +284,6 @@ ul li a:hover {
     color: #f18a1cd2;
 }
 
-/* Features Section */
-.features {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.features-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.features h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.feature-item {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1.5%;
-    text-align: center;
-}
-
-.feature-item ion-icon {
-    font-size: 50px;
-    color: #f18a1cd2;
-    margin-bottom: 20px;
-}
-
-.feature-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    font-size: 16px;
-    color: #666;
-}
 
 
 /* Footer Styles */
@@ -406,5 +382,3 @@ ul li a:hover {
 .back-to-top:hover {
     background-color: #333;
 }
-
-
